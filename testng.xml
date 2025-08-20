@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Suite">
+
+	<listeners>
+		<listener
+			class-name="com.zigwheels.listeners.ExtentReportListener" />
+	</listeners>
+
+	<test thread-count="5" name="Test">
+		<parameter name="browser" value="edge" />
+		<classes>
+			<class name="com.zigwheels.tests.SearchHondaBikes" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

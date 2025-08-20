@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-08-20T11:23:05 IST" name="Suite" finished-at="2025-08-20T11:24:00 IST" duration-ms="54763">
+    <groups>
+    </groups>
+    <test started-at="2025-08-20T11:23:05 IST" name="Test" finished-at="2025-08-20T11:24:00 IST" duration-ms="54763">
+      <class name="com.zigwheels.tests.SearchHondaBikes">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.zigwheels.tests.SearchHondaBikes@c8c12ac]" started-at="2025-08-20T11:23:06 IST" name="setup" finished-at="2025-08-20T11:23:16 IST" duration-ms="10656" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyNavigationtoUpcomingHondaBikes()[pri:1, instance:com.zigwheels.tests.SearchHondaBikes@c8c12ac]" started-at="2025-08-20T11:23:17 IST" name="verifyNavigationtoUpcomingHondaBikes" finished-at="2025-08-20T11:23:24 IST" duration-ms="7868" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNavigationtoUpcomingHondaBikes -->
+        <test-method signature="validateHondaBrand()[pri:2, instance:com.zigwheels.tests.SearchHondaBikes@c8c12ac]" started-at="2025-08-20T11:23:24 IST" name="validateHondaBrand" finished-at="2025-08-20T11:23:27 IST" duration-ms="2170" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateHondaBrand -->
+        <test-method signature="validatePrice()[pri:3, instance:com.zigwheels.tests.SearchHondaBikes@c8c12ac]" started-at="2025-08-20T11:23:27 IST" name="validatePrice" finished-at="2025-08-20T11:23:27 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatePrice -->
+        <test-method signature="validateCars()[pri:4, instance:com.zigwheels.tests.SearchHondaBikes@c8c12ac]" started-at="2025-08-20T11:23:27 IST" name="validateCars" finished-at="2025-08-20T11:23:37 IST" duration-ms="10379" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCars -->
+        <test-method signature="checkBoxes()[pri:5, instance:com.zigwheels.tests.SearchHondaBikes@c8c12ac]" started-at="2025-08-20T11:23:37 IST" name="checkBoxes" finished-at="2025-08-20T11:23:53 IST" depends-on-methods="com.zigwheels.tests.SearchHondaBikes.validateCars" duration-ms="15638" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkBoxes -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zigwheels.tests.SearchHondaBikes@c8c12ac]" started-at="2025-08-20T11:23:53 IST" name="tearDown" finished-at="2025-08-20T11:24:00 IST" duration-ms="7200" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.zigwheels.tests.SearchHondaBikes -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
