@@ -8,7 +8,8 @@
 	</listeners>
 
 	<test thread-count="5" name="Test">
-		<parameter name="browser" value="edge" />
+		<parameter name="operating_System" value="windows" />
+		<parameter name="browser" value="chrome" />
 		<classes>
 			<class name="com.zigwheels.tests.SearchHondaBikes" />
 		</classes>

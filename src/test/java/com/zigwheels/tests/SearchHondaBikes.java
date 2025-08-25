@@ -1,5 +1,7 @@
 package com.zigwheels.tests;
 import java.io.IOException;
+import java.time.Duration;
+
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -14,8 +16,8 @@ public class SearchHondaBikes extends BaseClass
 	
 	public HomePage homePage;
 	public BikesPage bikesPage;
-	public GoogleLoginPage googleLoginPage;
 	public UsedCars usedCars;
+	public GoogleLoginPage googleLoginPage;
 
 	
 	//testcases for honda bikes 
@@ -24,7 +26,7 @@ public class SearchHondaBikes extends BaseClass
 	public void verifyNavigationtoUpcomingHondaBikes() throws IOException, InterruptedException
 	{
 		homePage=new HomePage(driver);
-		logger.info("launched driver");
+		logger.info("Homepage loaded successfully");
 		homePage.SearchFor("Upcoming Honda");
 		logger.info("navigated to upcoming honda bikes");
 		Assert.assertEquals(driver.getTitle(),"Honda Upcoming Bikes in India - Check Price, Launch Date, Images and Latest News");
@@ -34,6 +36,7 @@ public class SearchHondaBikes extends BaseClass
 	public void testSearchUpcomingHondaBikes()
 	{
 		bikesPage=new BikesPage(driver);
+		logger.info("Validating bike brand: Honda");
 		Assert.assertFalse(bikesPage.BikeDetailsList.isEmpty(), "Bike list is empty");
 		Assert.assertTrue(bikesPage.verifyAllBikesAreHonda(),"Not all bikes are Honda brand");
 		
@@ -42,11 +45,15 @@ public class SearchHondaBikes extends BaseClass
 	@Test(priority=3)
 	public void testBikeCardDetails()
 	{
+		bikesPage=new BikesPage(driver);
+		logger.info("Validating bike card details");
 		Assert.assertTrue(bikesPage.verifyBikeCardDetails(),"Some bike cards have missing details");
 	}
 	
 	@Test(priority = 4)
     public void testPriceBelowThreshold() {
+		bikesPage=new BikesPage(driver);
+		logger.info("Checking for bikes priced below ₹4 Lakhs");
         Assert.assertTrue(bikesPage.verifyPriceBelowThreshold(), "No bikes found under ₹4 Lakhs");
     }
 	
@@ -63,6 +70,7 @@ public class SearchHondaBikes extends BaseClass
 	{
 		homePage.SearchFor("Used Cars In Chen");
 		usedCars=new UsedCars(driver);
+		logger.info("Validating used car list");
 		Assert.assertTrue(usedCars.verifyFullList());
 		
 	}
@@ -71,30 +79,47 @@ public class SearchHondaBikes extends BaseClass
 	public void checkBoxes() throws InterruptedException
 	{
 		System.out.println();
-		usedCars.checkPopularModels();
+		logger.info("Checking for popular car models");
+		Assert.assertTrue(usedCars.checkPopularModels(),"No popular cars displayed");
 	}
 	
 	
 	
 	
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-//	//google login 
+//	google login 
 	
 	
-//	@Test(priority=21)
-//	public void navigateToNewWindow()
-//	{
-//		homePage.goToHomePage();
+	@Test(priority=21)
+	public void navigateToNewWindow() throws InterruptedException
+	{
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+////		homePage.goToHomePage();
+		Thread.sleep(2000);
+		driver.navigate().back();
+		Thread.sleep(2000);
+		driver.navigate().back();
+		Thread.sleep(2000);
 //		googleLoginPage.clickLoginButton();
 //		googleLoginPage.clickGoogleLogin();
 //		Assert.assertTrue(googleLoginPage.switchToGoogleWindow(), "Window not changed");
-//	}
-//	
-//	@Test(priority=22)
-//	public void validateEmail(String email)
-//	{
-//		googleLoginPage.sendEmail(email);
-//		System.out.println(googleLoginPage.getEmailErrorMessage());
-//	}
+		
+		googleLoginPage=new GoogleLoginPage(driver);
+		logger.info("Clicking login button");
+		googleLoginPage.clickLoginButton();
+		logger.info("Clicking Google login option");
+		googleLoginPage.clickGoogleLogin();
+		logger.info("Switching to Google login window");
+		Assert.assertTrue(googleLoginPage.switchToGoogleWindow(),"Switching to Google Login window Failed !!");
+		
+	}
+	
+	@Test(priority=22)
+	public void validateEmail()
+	{
+		logger.info("Entering email");
+		googleLoginPage.sendEmail("cyiegviyebvi@gmail.com");
+		System.out.println(googleLoginPage.getEmailErrorMessage2());
+	}
 	
 }

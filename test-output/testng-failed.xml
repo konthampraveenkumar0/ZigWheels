@@ -5,13 +5,14 @@
     <listener class-name="com.zigwheels.listeners.ExtentReportListener"/>
   </listeners>
   <test thread-count="5" name="Test(failed)">
-    <parameter name="browser" value="edge"/>
+    <parameter name="operating_System" value="windows"/>
+    <parameter name="browser" value="chrome"/>
     <classes>
       <class name="com.zigwheels.tests.SearchHondaBikes">
         <methods>
-          <include name="checkBoxes"/>
+          <include name="validateEmail"/>
+          <include name="navigateToNewWindow"/>
           <include name="setup"/>
-          <include name="validateCars"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- com.zigwheels.tests.SearchHondaBikes -->

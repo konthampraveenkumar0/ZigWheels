@@ -2,10 +2,13 @@ package com.zigwheels.pages;
 
 import java.time.Duration;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class GoogleLoginPage
 {
@@ -23,16 +26,16 @@ public class GoogleLoginPage
     WebElement loginButton;
 
     //google button
-    @FindBy(xpath = "//*[@id='myModal3-modal-content']/div[1]/div/div[3]/div[6]/div")
+    @FindBy(xpath = "//*[@id='myModal3-modal-content']/div[1]/div/div[3]/div[6]/div/span[2]")
     WebElement googleLoginButton;
     
     //email id field
-    @FindBy(id = "identifierId")
+    @FindBy(xpath = "//*[@id='identifierId']")
     WebElement emailIdField;
     
     
     //next button for email element
-    @FindBy(xpath = "//*[@id='identifierNext']/div/button/div[3]")
+    @FindBy(xpath = "//*[@id='identifierNext']/div/button/span")
     WebElement emailNextButton;
     
     //passwordField
@@ -44,6 +47,9 @@ public class GoogleLoginPage
     
     @FindBy(xpath = "//*[@id=\"i8\"]/div")
     WebElement emailErrorMessage;
+    
+    @FindBy(xpath="//*[@id='headingText']/span")
+    WebElement emailErrorMessage2;
     
     @FindBy(xpath = "//*[@id='c0']/div[2]")
     WebElement passwordErrorMessage;
@@ -64,9 +70,10 @@ public class GoogleLoginPage
         // Switch to Google window and perform login
     	String currentWindowId=driver.getWindowHandle();
         for (String winHandle : driver.getWindowHandles()) {
-            driver.switchTo().window(winHandle);
-            if(driver.getTitle().equals("Sign in – Google accounts")) 
+            
+            if(!currentWindowId.equals(winHandle)) 
             {
+            	driver.switchTo().window(winHandle);
             	return true;
             }
         }
@@ -76,7 +83,12 @@ public class GoogleLoginPage
     
     public void sendEmail(String email)
     {
-    	emailIdField.sendKeys(email);
+    	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+    	WebElement emailField = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("identifierId")));
+    	emailField.sendKeys(email);
+
+//    	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+//    	emailIdField.sendKeys(email);
     	emailNextButton.click();
     }
     
@@ -90,10 +102,12 @@ public class GoogleLoginPage
     public String getEmailErrorMessage() {
         return emailErrorMessage.getText();
     }
+    public String getEmailErrorMessage2() {
+        return emailErrorMessage2.getText();
+    }
     
     public String getPasswordErrorMessage() {
         return passwordErrorMessage.getText();
     }
     
 }
-

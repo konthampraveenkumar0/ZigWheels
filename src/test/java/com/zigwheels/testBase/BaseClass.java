@@ -1,5 +1,6 @@
 package com.zigwheels.testBase;
 
+import java.net.MalformedURLException;
 import java.time.Duration;
 
 import org.apache.logging.log4j.LogManager;
@@ -18,16 +19,16 @@ public class BaseClass
 	public WebDriver driver;
 	public static Logger logger ;
 	
-	@Parameters("browser")
+	@Parameters({"operating_System","browser"})
 	@BeforeClass
-	public void setup(String browser) 
+	public void setup(String operating_System,String browser) throws MalformedURLException 
 	{
 		logger=LogManager.getLogger(this.getClass());
-		driver=DriverFactory.getDriver(browser);
+		driver=DriverFactory.getDriver(operating_System,browser);
 		driver.get(ConfigReader.getAppUrl());
 		logger.info("URL launched");
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds( 10));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		logger.info("Window got maximised");
 
 	}

@@ -75,6 +75,7 @@ public class BikesPage
 	}
 	
 	public boolean verifyBikeCardDetails() {
+		System.out.println(driver);
         for (Bike bike : BikeDetailsList) {
             if (bike.getName().isEmpty() || bike.getPrice() <= 0 || bike.getExp_date().isEmpty()) {
                 System.out.println("❌ Incomplete bike card: " + bike);
