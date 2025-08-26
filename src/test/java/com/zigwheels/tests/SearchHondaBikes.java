@@ -122,7 +122,7 @@ public class SearchHondaBikes extends BaseClass
 	public void validateEmail()
 	{
 		logger.info("Entering email");
-		googleLoginPage.sendEmail("cyiegviyebvi@gmail.com");
+		googleLoginPage.sendEmail("praveen@gmail.com");
 		System.out.println(googleLoginPage.getEmailErrorMessage2());
 	}
 	

@@ -10,18 +10,18 @@ import com.zigwheels.pages.UsedCars;
 
 import io.cucumber.java.en.Then;
 
-public class UsedCarsSteps 
-{
+public class UsedCarsSteps {
+
 	
-	public WebDriver driver=null;
+	public static WebDriver driver1;
 	public Logger logger=LogManager.getLogger(this.getClass());
 	public HomePage homePage;
 	public UsedCars usedCars;
 	
 	public UsedCarsSteps()
 	{
-		driver=BikesSteps.driver;
-//		driver=DriverFactory.getDriver("chrome");
+		driver1=GoogleLoginSteps.driver2;
+//		usedCars=new UsedCars(driver1);
 	}
 
 //	@When("the user searches for {string}")
@@ -32,16 +32,15 @@ public class UsedCarsSteps
 
 	@Then("the used car list should be displayed")
 	public void validateUsedCarList() {
-//		driver=DriverFactory.getCurrentDriver();
 		logger.info("Validating used car list");
-		usedCars=new UsedCars(driver);
+		usedCars=new UsedCars(driver1);
 	    Assert.assertTrue(usedCars.verifyFullList(),"Used car list is not displayed");
 	}
 
 	@Then("popular car models should be visible")
 	public void validatePopularModels() {
 		logger.info("Checking for popular car models");
-		usedCars=new UsedCars(driver);
+		usedCars=new UsedCars(driver1);
 //	    Assert.assertTrue(usedCars.checkPopularModels(),"Popular car models not visible");
 	   
 	}

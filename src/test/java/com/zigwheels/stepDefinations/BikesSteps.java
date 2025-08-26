@@ -21,7 +21,7 @@ import org.testng.Assert;
 
 public class BikesSteps 
 {
-	public static WebDriver driver;
+	protected static WebDriver driver;
 	public Logger logger=LogManager.getLogger(this.getClass());
 	public HomePage homePage;
 	public BikesPage bikesPage;
@@ -39,6 +39,7 @@ public class BikesSteps
 
 	@When("the user searches for {string}")
 	public void userSearchesFor(String query) throws IOException, InterruptedException {
+		System.out.println(driver);
 		logger.info("Searching for: {}", query);
 	    homePage.SearchFor(query);
 	}

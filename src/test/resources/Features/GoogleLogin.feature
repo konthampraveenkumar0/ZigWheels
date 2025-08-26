@@ -7,5 +7,5 @@ Feature: Validate Google login flow
     Then the Google login window should open
 
   Scenario: Validate email error message
-    When the user enters email "cyiegviyebvi@gmail.com"
+    When the user enters email "praveen@gmail.com"
     Then the email error message should be displayed

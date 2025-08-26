@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>7/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Aug 26 10:42:45 IST 2025</td>
+<td>Started on:</td><td>Tue Aug 26 12:22:16 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>58 seconds (58330 ms)</td>
+<tr><td>Total time:</td><td>244 seconds (244391 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -171,8 +171,8 @@ Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to
 	at java.base/java.security.cert.CertPathBuilder.build(CertPathBuilder.java:297)
 	at java.base/sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:383)
 	... 62 more
-</pre></div><a href='#' onClick='toggleBox("stack-trace506518405", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace506518405'><pre>java.lang.RuntimeException: javax.net.ssl.SSLHandshakeException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+</pre></div><a href='#' onClick='toggleBox("stack-trace293108580", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace293108580'><pre>java.lang.RuntimeException: javax.net.ssl.SSLHandshakeException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
 	at io.cucumber.core.plugin.MessageFormatter.writeMessage(MessageFormatter.java:32)
 	at io.cucumber.core.eventbus.AbstractEventPublisher.send(AbstractEventPublisher.java:51)
 	at io.cucumber.core.eventbus.AbstractEventBus.send(AbstractEventBus.java:12)
@@ -279,60 +279,70 @@ Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.zigwheels.testRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.zigwheels.testRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate popular models", "Validate used cars in Chennai"</td>
-<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
-  (Session info: chrome=138.0.7204.158)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+<td title='com.zigwheels.testRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.zigwheels.testRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search for used cars in Chennai", "Validate used cars in Chennai"</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
 Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [703634f172b382b7e6c9533644162458, getElementText {id=f.F479AE9C34AFF2FBBB8ECD4D1609B0BD.d.445988B47E8E3CBAC08848AE55F5DA9B.e.254}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.158, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: C:\Users\2421291\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60088}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60088/devtoo..., se:cdpVersion: 138.0.7204.158, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (703634f172b382b7e6c9533644162458)] -&gt; xpath: (//*[@class=&apos;zw-sr-searchWrap zw-sr-searchGrid&apos;]/div/div/div[3]/div[2]/a)[4]]
-Session ID: 703634f172b382b7e6c9533644162458
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+Command: [37602360d80f252eeec5b5bbce648d39, findElement {value=//*[@id=&apos;data-set-body&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.158, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: C:\Users\2421291\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59771}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59771/devtoo..., se:cdpVersion: 138.0.7204.158, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 37602360d80f252eeec5b5bbce648d39
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute(JdkHttpClient.java:427)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:212)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:191)
-	at com.zigwheels.pages.UsedCars.checkPopularModels(UsedCars.java:86)
-	at com.zigwheels.stepDefinations.UsedCarsSteps.validatePopularModels(UsedCarsSteps.java:45)
-	at ✽.popular car models should be visible(file:///C:/Users/2421291/eclipse-workspace/ZigWheels/src/test/resources/Features/UsedCars.feature:9)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1325931357", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1325931357'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
-  (Session info: chrome=138.0.7204.158)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy39.getText(Unknown Source)
+	at com.zigwheels.pages.UsedCars.verifyFullList(UsedCars.java:37)
+	at com.zigwheels.stepDefinations.UsedCarsSteps.validateUsedCarList(UsedCarsSteps.java:37)
+	at ✽.the used car list should be displayed(file:///C:/Users/2421291/eclipse-workspace/ZigWheels/src/test/resources/Features/UsedCars.feature:6)
+Caused by: java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture$Timeout.run(CompletableFuture.java:2920)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1835713430", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1835713430'><pre>org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
 Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [703634f172b382b7e6c9533644162458, getElementText {id=f.F479AE9C34AFF2FBBB8ECD4D1609B0BD.d.445988B47E8E3CBAC08848AE55F5DA9B.e.254}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.158, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: C:\Users\2421291\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60088}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60088/devtoo..., se:cdpVersion: 138.0.7204.158, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (703634f172b382b7e6c9533644162458)] -&gt; xpath: (//*[@class=&apos;zw-sr-searchWrap zw-sr-searchGrid&apos;]/div/div/div[3]/div[2]/a)[4]]
-Session ID: 703634f172b382b7e6c9533644162458
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+Command: [37602360d80f252eeec5b5bbce648d39, findElement {value=//*[@id=&apos;data-set-body&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.158, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: C:\Users\2421291\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59771}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59771/devtoo..., se:cdpVersion: 138.0.7204.158, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 37602360d80f252eeec5b5bbce648d39
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute(JdkHttpClient.java:427)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:212)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:191)
-	at com.zigwheels.pages.UsedCars.checkPopularModels(UsedCars.java:86)
-	at com.zigwheels.stepDefinations.UsedCarsSteps.validatePopularModels(UsedCarsSteps.java:45)
-	at ✽.popular car models should be visible(file:///C:/Users/2421291/eclipse-workspace/ZigWheels/src/test/resources/Features/UsedCars.feature:9)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy39.getText(Unknown Source)
+	at com.zigwheels.pages.UsedCars.verifyFullList(UsedCars.java:37)
+	at com.zigwheels.stepDefinations.UsedCarsSteps.validateUsedCarList(UsedCarsSteps.java:37)
+	at ✽.the used car list should be displayed(file:///C:/Users/2421291/eclipse-workspace/ZigWheels/src/test/resources/Features/UsedCars.feature:6)
+Caused by: java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture$Timeout.run(CompletableFuture.java:2920)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
 </pre></div></td>
-<td>5</td>
+<td>200</td>
 <td>com.zigwheels.testRunner.TestRunner@6a2f6f80</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
@@ -346,12 +356,7 @@ Session ID: 703634f172b382b7e6c9533644162458
 <tr>
 <td title='com.zigwheels.testRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.zigwheels.testRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate bike card details", "Validate upcoming Honda bikes"</td>
 <td></td>
-<td>0</td>
-<td>com.zigwheels.testRunner.TestRunner@6a2f6f80</td></tr>
-<tr>
-<td title='com.zigwheels.testRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.zigwheels.testRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate email error message", "Validate Google login flow"</td>
-<td></td>
-<td>3</td>
+<td>1</td>
 <td>com.zigwheels.testRunner.TestRunner@6a2f6f80</td></tr>
 <tr>
 <td title='com.zigwheels.testRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.zigwheels.testRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate Honda bike list", "Validate upcoming Honda bikes"</td>
@@ -361,22 +366,27 @@ Session ID: 703634f172b382b7e6c9533644162458
 <tr>
 <td title='com.zigwheels.testRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.zigwheels.testRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Navigate to upcoming Honda bikes", "Validate upcoming Honda bikes"</td>
 <td></td>
-<td>16</td>
+<td>18</td>
 <td>com.zigwheels.testRunner.TestRunner@6a2f6f80</td></tr>
 <tr>
 <td title='com.zigwheels.testRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.zigwheels.testRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate bike price threshold", "Validate upcoming Honda bikes"</td>
 <td></td>
-<td>0</td>
-<td>com.zigwheels.testRunner.TestRunner@6a2f6f80</td></tr>
-<tr>
-<td title='com.zigwheels.testRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.zigwheels.testRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search for used cars in Chennai", "Validate used cars in Chennai"</td>
-<td></td>
-<td>17</td>
+<td>1</td>
 <td>com.zigwheels.testRunner.TestRunner@6a2f6f80</td></tr>
 <tr>
 <td title='com.zigwheels.testRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.zigwheels.testRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Navigate to Google login window", "Validate Google login flow"</td>
 <td></td>
-<td>10</td>
+<td>13</td>
+<td>com.zigwheels.testRunner.TestRunner@6a2f6f80</td></tr>
+<tr>
+<td title='com.zigwheels.testRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.zigwheels.testRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate popular models", "Validate used cars in Chennai"</td>
+<td></td>
+<td>0</td>
+<td>com.zigwheels.testRunner.TestRunner@6a2f6f80</td></tr>
+<tr>
+<td title='com.zigwheels.testRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.zigwheels.testRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate email error message", "Validate Google login flow"</td>
+<td></td>
+<td>4</td>
 <td>com.zigwheels.testRunner.TestRunner@6a2f6f80</td></tr>
 </table><p>
 </body>

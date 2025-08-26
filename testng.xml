@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<suite name="Suite">
+<suite name="Suite" >
 
 	<listeners>
 		<listener
@@ -12,6 +12,11 @@
 		<parameter name="browser" value="chrome" />
 		<classes>
 			<class name="com.zigwheels.tests.SearchHondaBikes" />
+			
 		</classes>
 	</test> <!-- Test -->
+	
+	
+	
+	
 </suite> <!-- Suite -->
