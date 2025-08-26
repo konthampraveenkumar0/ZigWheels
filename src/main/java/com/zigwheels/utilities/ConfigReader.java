@@ -58,6 +58,12 @@ public class ConfigReader {
     public static String getAppUrl() {
         return getProperty("app.url");
     }
+    
+    //get environment
+    public static String getEnvironment()
+    {
+    	return getProperty("environment");
+    }
  
     /**
      * Get implicit wait timeout

@@ -16,7 +16,7 @@ import io.cucumber.java.en.When;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.junit.Assert;
+import org.testng.Assert;
 
 
 public class BikesSteps 

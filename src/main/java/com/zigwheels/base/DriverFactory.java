@@ -13,6 +13,8 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
+import com.zigwheels.utilities.ConfigReader;
+
 public class DriverFactory 
 {
 	public static WebDriver driver;
@@ -22,7 +24,7 @@ public class DriverFactory
     	 
     	WebDriver driver = null;
 
-        String execution_env="local";
+        String execution_env=ConfigReader.getEnvironment();
         
         //for remote running 
         if(execution_env.equals("remote"))

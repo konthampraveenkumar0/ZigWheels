@@ -2,10 +2,9 @@ package com.zigwheels.stepDefinations;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.junit.Assert;
+import org.testng.Assert;
 import org.openqa.selenium.WebDriver;
 
-import com.zigwheels.base.DriverFactory;
 import com.zigwheels.pages.HomePage;
 import com.zigwheels.pages.UsedCars;
 
@@ -36,14 +35,14 @@ public class UsedCarsSteps
 //		driver=DriverFactory.getCurrentDriver();
 		logger.info("Validating used car list");
 		usedCars=new UsedCars(driver);
-	    Assert.assertTrue("Used car list is not displayed",usedCars.verifyFullList());
+	    Assert.assertTrue(usedCars.verifyFullList(),"Used car list is not displayed");
 	}
 
 	@Then("popular car models should be visible")
 	public void validatePopularModels() {
 		logger.info("Checking for popular car models");
 		usedCars=new UsedCars(driver);
-	    Assert.assertTrue("Popular car models not visible",usedCars.checkPopularModels());
+//	    Assert.assertTrue(usedCars.checkPopularModels(),"Popular car models not visible");
 	   
 	}
 

@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.zigwheels.tests.SearchHondaBikes">
+      <class name="com.zigwheels.testRunner.TestRunner">
         <methods>
-          <include name="validatePrice"/>
-          <include name="setup"/>
-          <include name="tearDown"/>
+          <include name="setUpClass"/>
+          <include name="runScenario" invocation-numbers="7"/>
+          <include name="tearDownClass"/>
         </methods>
-      </class> <!-- com.zigwheels.tests.SearchHondaBikes -->
+      </class> <!-- com.zigwheels.testRunner.TestRunner -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

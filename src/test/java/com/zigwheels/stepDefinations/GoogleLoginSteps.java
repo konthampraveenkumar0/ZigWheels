@@ -2,10 +2,9 @@ package com.zigwheels.stepDefinations;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.junit.Assert;
+import org.testng.Assert;
 import org.openqa.selenium.WebDriver;
 
-import com.zigwheels.base.DriverFactory;
 import com.zigwheels.pages.GoogleLoginPage;
 
 import io.cucumber.java.en.Then;
@@ -59,7 +58,7 @@ public class GoogleLoginSteps
 //	    System.out.println(googleLoginPage.getEmailErrorMessage2());
 		String actualError = googleLoginPage.getEmailErrorMessage2();
 		logger.info("Email error message received: {}", actualError);
-	    Assert.assertTrue("Error message not displayed", actualError.equals("Sign in"));
+	    Assert.assertTrue(actualError.equals("Sign in"),"Error message not displayed");
 	    
 	}
 

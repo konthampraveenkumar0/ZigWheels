@@ -7,27 +7,26 @@ import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
+public class ExcelUtils {
 
-public class ExcelUtils 
-{
-	
-	public static String getFileDetails() throws IOException {
-	    FileInputStream file = new FileInputStream(ConfigReader.getTestDataFile());
-	         XSSFWorkbook workbook = new XSSFWorkbook(file);
+	public static String[] getFileDetails() throws IOException 
+	{
+		FileInputStream file = new FileInputStream(ConfigReader.getTestDataFile());
+		XSSFWorkbook workbook = new XSSFWorkbook(file);
+		XSSFSheet sheet = workbook.getSheet("Sheet1");
+		XSSFRow row = sheet.getRow(1);
 
-	        XSSFSheet sheet = workbook.getSheet("Sheet1");
-	       
+		String arr[]=new String[row.getLastCellNum()];
+		for(int i=0;i<row.getLastCellNum();i++)
+		{
+			arr[i]=row.getCell(i).toString();
+		}
+		workbook.close();
+		file.close();
+		return arr;
 
-	        XSSFRow row = sheet.getRow(1);
-	  
-
-	        workbook.close();
-	        file.close();
-	        return row.getCell(0).toString();
-	    
 	}
 
-	
 //	public static void writeResultToExcel(String result) throws IOException {
 //	    FileInputStream file = new FileInputStream(ConfigReader.getTestDataFile());
 //	    XSSFWorkbook workbook = new XSSFWorkbook(file);
@@ -45,6 +44,5 @@ public class ExcelUtils
 //	    outFile.close();
 //	    workbook.close();
 //	}
-
 
 }
