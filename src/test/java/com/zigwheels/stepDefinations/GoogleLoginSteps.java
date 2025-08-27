@@ -31,6 +31,27 @@ public class GoogleLoginSteps
 	    logger.info("Clicking login button");
 	    googleLoginPage.clickLoginButton();
 	}
+	
+	///
+	//adding new test scenario
+	@Then("all login options should be displayed correctly")
+    public void testLoginOptions() {
+        googleLoginPage = new GoogleLoginPage(driver2);
+
+        String actualFaceBookText = googleLoginPage.getFaceBookText();
+        String actualAppleText = googleLoginPage.getAppleText();
+        String actualGoogleText = googleLoginPage.getGoogleText();
+
+        logger.info("Facebook Text: {}", actualFaceBookText);
+        logger.info("Apple Text: {}", actualAppleText);
+        logger.info("Google Text: {}", actualGoogleText);
+
+        boolean allMatch = actualFaceBookText.equals("Facebook") &&
+                           actualAppleText.equals("Apple") &&
+                           actualGoogleText.equals("Google");
+
+        Assert.assertTrue(allMatch, "One or more login button texts do not match expected values.");
+    }
 
 	@When("clicks the Google login option")
 	public void clickGoogleLogin() {
@@ -45,6 +66,8 @@ public class GoogleLoginSteps
 		logger.info("Switching to Google login window");
 	    Assert.assertTrue(googleLoginPage.switchToGoogleWindow());
 	}
+	
+	
 
 	@When("the user enters email {string}")
 	public void enterEmail(String email) {

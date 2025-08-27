@@ -1,0 +1,107 @@
+2025-08-27 11:13:21 INFO  ConfigReader:31 - Configuration properties loaded successfully
+2025-08-27 11:14:07 INFO  ConfigReader:31 - Configuration properties loaded successfully
+2025-08-27 11:14:49 INFO  SearchHondaBikes:29 - URL launched
+2025-08-27 11:14:49 INFO  SearchHondaBikes:32 - Window got maximised
+2025-08-27 11:14:49 INFO  SearchHondaBikes:31 - Homepage loaded successfully
+2025-08-27 11:15:31 INFO  SearchHondaBikes:35 - navigated to upcoming honda bikes
+2025-08-27 11:15:31 INFO  SearchHondaBikes:87 - Validating used car list
+2025-08-27 11:15:33 INFO  SearchHondaBikes:152 - Entering email
+2025-08-27 11:16:26 INFO  ConfigReader:31 - Configuration properties loaded successfully
+2025-08-27 11:16:43 INFO  SearchHondaBikes:29 - URL launched
+2025-08-27 11:16:44 INFO  SearchHondaBikes:32 - Window got maximised
+2025-08-27 11:16:44 INFO  SearchHondaBikes:31 - Homepage loaded successfully
+2025-08-27 11:17:57 INFO  SearchHondaBikes:35 - navigated to upcoming honda bikes
+2025-08-27 11:18:00 INFO  SearchHondaBikes:43 - Validating bike brand: Honda
+2025-08-27 11:18:04 INFO  SearchHondaBikes:53 - Validating bike card details
+2025-08-27 11:18:07 INFO  SearchHondaBikes:60 - Checking for bikes priced below ₹4 Lakhs
+2025-08-27 11:21:13 INFO  SearchHondaBikes:87 - Validating used car list
+2025-08-27 11:23:14 INFO  SearchHondaBikes:96 - Checking for popular car models
+2025-08-27 11:23:51 INFO  SearchHondaBikes:121 - Navigated to Home Page
+2025-08-27 11:23:51 INFO  SearchHondaBikes:123 - Clicking login button
+2025-08-27 11:23:51 INFO  SearchHondaBikes:126 - Clicking Google login option
+2025-08-27 11:23:52 INFO  SearchHondaBikes:128 - Switching to Google login window
+2025-08-27 11:26:53 INFO  SearchHondaBikes:152 - Entering email
+2025-08-27 11:32:28 INFO  ConfigReader:31 - Configuration properties loaded successfully
+2025-08-27 11:32:43 INFO  SearchHondaBikes:29 - URL launched
+2025-08-27 11:32:44 INFO  SearchHondaBikes:32 - Window got maximised
+2025-08-27 11:32:44 INFO  SearchHondaBikes:31 - Homepage loaded successfully
+2025-08-27 11:32:57 INFO  SearchHondaBikes:35 - navigated to upcoming honda bikes
+2025-08-27 11:32:59 INFO  SearchHondaBikes:43 - Validating bike brand: Honda
+2025-08-27 11:33:00 INFO  SearchHondaBikes:53 - Validating bike card details
+2025-08-27 11:33:00 INFO  SearchHondaBikes:60 - Checking for bikes priced below ₹4 Lakhs
+2025-08-27 11:33:11 INFO  SearchHondaBikes:77 - navigated to UsedCars in Chennai page
+2025-08-27 11:33:11 INFO  SearchHondaBikes:87 - Validating used car list
+2025-08-27 11:33:13 INFO  SearchHondaBikes:96 - Checking for popular car models
+2025-08-27 11:33:23 INFO  SearchHondaBikes:121 - Navigated to Home Page
+2025-08-27 11:33:23 INFO  SearchHondaBikes:123 - Clicking login button
+2025-08-27 11:33:23 INFO  SearchHondaBikes:126 - Clicking Google login option
+2025-08-27 11:33:24 INFO  SearchHondaBikes:128 - Switching to Google login window
+2025-08-27 11:36:24 INFO  SearchHondaBikes:152 - Entering email
+2025-08-27 11:37:56 INFO  ConfigReader:31 - Configuration properties loaded successfully
+2025-08-27 11:38:12 INFO  SearchHondaBikes:29 - URL launched
+2025-08-27 11:38:12 INFO  SearchHondaBikes:32 - Window got maximised
+2025-08-27 11:38:12 INFO  SearchHondaBikes:31 - Homepage loaded successfully
+2025-08-27 11:38:28 INFO  SearchHondaBikes:35 - navigated to upcoming honda bikes
+2025-08-27 11:38:30 INFO  SearchHondaBikes:43 - Validating bike brand: Honda
+2025-08-27 11:38:31 INFO  SearchHondaBikes:53 - Validating bike card details
+2025-08-27 11:38:32 INFO  SearchHondaBikes:60 - Checking for bikes priced below ₹4 Lakhs
+2025-08-27 11:38:42 INFO  SearchHondaBikes:77 - navigated to UsedCars in Chennai page
+2025-08-27 11:38:42 INFO  SearchHondaBikes:87 - Validating used car list
+2025-08-27 11:38:44 INFO  SearchHondaBikes:96 - Checking for popular car models
+2025-08-27 11:38:54 INFO  SearchHondaBikes:121 - Navigated to Home Page
+2025-08-27 11:38:54 INFO  SearchHondaBikes:123 - Clicking login button
+2025-08-27 11:38:55 INFO  SearchHondaBikes:126 - Clicking Google login option
+2025-08-27 11:38:56 INFO  SearchHondaBikes:128 - Switching to Google login window
+2025-08-27 11:40:56 INFO  SearchHondaBikes:156 - Entering email
+2025-08-27 11:41:51 INFO  ConfigReader:31 - Configuration properties loaded successfully
+2025-08-27 11:42:20 INFO  SearchHondaBikes:29 - URL launched
+2025-08-27 11:42:20 INFO  SearchHondaBikes:32 - Window got maximised
+2025-08-27 11:42:20 INFO  SearchHondaBikes:31 - Homepage loaded successfully
+2025-08-27 11:42:35 INFO  SearchHondaBikes:35 - navigated to upcoming honda bikes
+2025-08-27 11:42:37 INFO  SearchHondaBikes:43 - Validating bike brand: Honda
+2025-08-27 11:42:38 INFO  SearchHondaBikes:53 - Validating bike card details
+2025-08-27 11:42:39 INFO  SearchHondaBikes:60 - Checking for bikes priced below ₹4 Lakhs
+2025-08-27 11:43:25 INFO  SearchHondaBikes:77 - navigated to UsedCars in Chennai page
+2025-08-27 11:43:25 INFO  SearchHondaBikes:87 - Validating used car list
+2025-08-27 11:43:27 INFO  SearchHondaBikes:96 - Checking for popular car models
+2025-08-27 11:43:38 INFO  SearchHondaBikes:121 - Navigated to Home Page
+2025-08-27 11:43:38 INFO  SearchHondaBikes:123 - Clicking login button
+2025-08-27 11:43:39 INFO  SearchHondaBikes:126 - Clicking Google login option
+2025-08-27 11:43:39 INFO  SearchHondaBikes:128 - Switching to Google login window
+2025-08-27 11:46:40 INFO  SearchHondaBikes:156 - Entering email
+2025-08-27 11:59:07 INFO  BikesSteps:31 - Launching ZigWheels homepage
+2025-08-27 11:59:07 INFO  ConfigReader:31 - Configuration properties loaded successfully
+2025-08-27 11:59:32 INFO  BikesSteps:37 - Homepage loaded successfully
+2025-08-27 11:59:32 INFO  BikesSteps:43 - Searching for: Upcoming Honda
+2025-08-27 11:59:54 INFO  BikesSteps:50 - Validating page title. Expected: Honda Upcoming Bikes in India - Check Price, Launch Date, Images and Latest News, Actual: Honda Upcoming Bikes in India - Check Price, Launch Date, Images and Latest News
+2025-08-27 11:59:55 INFO  BikesSteps:57 - Validating bike brand: Honda
+2025-08-27 11:59:57 INFO  BikesSteps:65 - Validating bike card details
+2025-08-27 11:59:58 INFO  BikesSteps:73 - Checking for bikes priced below ₹4 Lakhs
+2025-08-27 11:59:58 INFO  BikesSteps:31 - Launching ZigWheels homepage
+2025-08-27 12:00:58 INFO  BikesSteps:37 - Homepage loaded successfully
+2025-08-27 12:00:58 INFO  GoogleLoginSteps:31 - Clicking login button
+2025-08-27 12:00:59 INFO  GoogleLoginSteps:38 - Clicking Google login option
+2025-08-27 12:01:06 INFO  GoogleLoginSteps:45 - Switching to Google login window
+2025-08-27 12:04:06 INFO  GoogleLoginSteps:72 - Entering email: praveen@gmail.com
+2025-08-27 12:05:58 INFO  ConfigReader:31 - Configuration properties loaded successfully
+2025-08-27 12:07:06 INFO  BikesSteps:31 - Launching ZigWheels homepage
+2025-08-27 12:10:27 INFO  BikesSteps:37 - Homepage loaded successfully
+2025-08-27 12:10:27 INFO  BikesSteps:43 - Searching for: Used Cars In Chen
+2025-08-27 12:10:46 INFO  UsedCarsSteps:35 - Validating used car list
+2025-08-27 12:11:18 INFO  ConfigReader:31 - Configuration properties loaded successfully
+2025-08-27 12:11:20 INFO  UsedCarsSteps:42 - Checking for popular car models
+2025-08-27 12:11:36 INFO  SearchHondaBikes:29 - URL launched
+2025-08-27 12:11:37 INFO  SearchHondaBikes:32 - Window got maximised
+2025-08-27 12:11:37 INFO  SearchHondaBikes:31 - Homepage loaded successfully
+2025-08-27 12:11:54 INFO  SearchHondaBikes:35 - navigated to upcoming honda bikes
+2025-08-27 12:11:56 INFO  SearchHondaBikes:43 - Validating bike brand: Honda
+2025-08-27 12:11:57 INFO  SearchHondaBikes:53 - Validating bike card details
+2025-08-27 12:11:58 INFO  SearchHondaBikes:60 - Checking for bikes priced below ₹4 Lakhs
+2025-08-27 12:12:58 INFO  SearchHondaBikes:77 - navigated to UsedCars in Chennai page
+2025-08-27 12:12:58 INFO  SearchHondaBikes:87 - Validating used car list
+2025-08-27 12:13:00 INFO  SearchHondaBikes:96 - Checking for popular car models
+2025-08-27 12:13:12 INFO  SearchHondaBikes:121 - Navigated to Home Page
+2025-08-27 12:13:12 INFO  SearchHondaBikes:123 - Clicking login button
+2025-08-27 12:13:13 INFO  SearchHondaBikes:147 - Clicking Google login option
+2025-08-27 12:13:14 INFO  SearchHondaBikes:149 - Switching to Google login window
+2025-08-27 12:13:14 INFO  SearchHondaBikes:158 - Entering email

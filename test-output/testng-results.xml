@@ -1,222 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="8" passed="7" failed="1" skipped="0">
+<testng-results ignored="0" total="10" passed="9" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-08-26T12:22:16 IST" name="Default suite" finished-at="2025-08-26T12:26:20 IST" duration-ms="244391">
+  <suite started-at="2025-08-27T12:11:16 IST" name="Suite" finished-at="2025-08-27T12:14:17 IST" duration-ms="180731">
     <groups>
-      <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.zigwheels.testRunner.TestRunner@6a2f6f80]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
-      </group> <!-- cucumber -->
     </groups>
-    <test started-at="2025-08-26T12:22:16 IST" name="Default test" finished-at="2025-08-26T12:26:20 IST" duration-ms="244391">
-      <class name="com.zigwheels.testRunner.TestRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.zigwheels.testRunner.TestRunner@6a2f6f80]" started-at="2025-08-26T12:22:16 IST" name="setUpClass" finished-at="2025-08-26T12:22:17 IST" duration-ms="1412" status="PASS">
+    <test started-at="2025-08-27T12:11:16 IST" name="Test" finished-at="2025-08-27T12:14:17 IST" duration-ms="180731">
+      <class name="com.zigwheels.tests.SearchHondaBikes">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:com.zigwheels.tests.SearchHondaBikes@5e5d171f]" started-at="2025-08-27T12:11:17 IST" name="setup" finished-at="2025-08-27T12:11:37 IST" duration-ms="19480" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@4962b41e]]>
+                <![CDATA[windows]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.zigwheels.testRunner.TestRunner@6a2f6f80]" started-at="2025-08-26T12:22:17 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-26T12:22:36 IST" duration-ms="18922" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Navigate to upcoming Honda bikes"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Validate upcoming Honda bikes"]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyNavigationtoUpcomingHondaBikes()[pri:1, instance:com.zigwheels.tests.SearchHondaBikes@5e5d171f]" started-at="2025-08-27T12:11:37 IST" name="verifyNavigationtoUpcomingHondaBikes" finished-at="2025-08-27T12:11:54 IST" duration-ms="17828" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.zigwheels.testRunner.TestRunner@6a2f6f80]" started-at="2025-08-26T12:22:36 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-26T12:22:38 IST" duration-ms="1673" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Validate Honda bike list"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Validate upcoming Honda bikes"]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- verifyNavigationtoUpcomingHondaBikes -->
+        <test-method signature="testSearchUpcomingHondaBikes()[pri:2, instance:com.zigwheels.tests.SearchHondaBikes@5e5d171f]" started-at="2025-08-27T12:11:54 IST" name="testSearchUpcomingHondaBikes" finished-at="2025-08-27T12:11:56 IST" duration-ms="1375" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.zigwheels.testRunner.TestRunner@6a2f6f80]" started-at="2025-08-26T12:22:38 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-26T12:22:39 IST" duration-ms="1165" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Validate bike card details"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Validate upcoming Honda bikes"]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- testSearchUpcomingHondaBikes -->
+        <test-method signature="testBikeCardDetails()[pri:3, instance:com.zigwheels.tests.SearchHondaBikes@5e5d171f]" started-at="2025-08-27T12:11:56 IST" name="testBikeCardDetails" finished-at="2025-08-27T12:11:57 IST" duration-ms="1580" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.zigwheels.testRunner.TestRunner@6a2f6f80]" started-at="2025-08-26T12:22:39 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-26T12:22:40 IST" duration-ms="1191" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Validate bike price threshold"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Validate upcoming Honda bikes"]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- testBikeCardDetails -->
+        <test-method signature="testPriceBelowThreshold()[pri:4, instance:com.zigwheels.tests.SearchHondaBikes@5e5d171f]" started-at="2025-08-27T12:11:57 IST" name="testPriceBelowThreshold" finished-at="2025-08-27T12:11:58 IST" duration-ms="1018" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.zigwheels.testRunner.TestRunner@6a2f6f80]" started-at="2025-08-26T12:22:40 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-26T12:22:54 IST" duration-ms="13317" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Navigate to Google login window"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Validate Google login flow"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.zigwheels.testRunner.TestRunner@6a2f6f80]" started-at="2025-08-26T12:22:54 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-26T12:22:58 IST" duration-ms="4444" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Validate email error message"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Validate Google login flow"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.zigwheels.testRunner.TestRunner@6a2f6f80]" started-at="2025-08-26T12:22:58 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-26T12:26:19 IST" duration-ms="200622" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Search for used cars in Chennai"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Validate used cars in Chennai"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.TimeoutException">
+        </test-method> <!-- testPriceBelowThreshold -->
+        <test-method signature="verifyNavigationtoUsedCarsinChennai()[pri:11, instance:com.zigwheels.tests.SearchHondaBikes@5e5d171f]" started-at="2025-08-27T12:11:58 IST" name="verifyNavigationtoUsedCarsinChennai" finished-at="2025-08-27T12:12:58 IST" duration-ms="59304" status="FAIL">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[java.util.concurrent.TimeoutException
-Build info: version: '4.34.0', revision: '707dcb4246*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [37602360d80f252eeec5b5bbce648d39, findElement {value=//*[@id='data-set-body'], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.158, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: C:\Users\2421291\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59771}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59771/devtoo..., se:cdpVersion: 138.0.7204.158, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 37602360d80f252eeec5b5bbce648d39]]>
+              <![CDATA[expected [Used Cars in Chennai - 1624 Second Hand Cars for Sale in Chennai] but found [Used Cars in Chennai - 1632 Second Hand Cars for Sale in Chennai]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
-Build info: version: '4.34.0', revision: '707dcb4246*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [37602360d80f252eeec5b5bbce648d39, findElement {value=//*[@id='data-set-body'], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.158, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: C:\Users\2421291\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59771}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59771/devtoo..., se:cdpVersion: 138.0.7204.158, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 37602360d80f252eeec5b5bbce648d39
-at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute(JdkHttpClient.java:427)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:212)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy39.getText(Unknown Source)
-at com.zigwheels.pages.UsedCars.verifyFullList(UsedCars.java:37)
-at com.zigwheels.stepDefinations.UsedCarsSteps.validateUsedCarList(UsedCarsSteps.java:37)
-at ✽.the used car list should be displayed(file:///C:/Users/2421291/eclipse-workspace/ZigWheels/src/test/resources/Features/UsedCars.feature:6)
-Caused by: java.util.concurrent.TimeoutException
-at java.base/java.util.concurrent.CompletableFuture$Timeout.run(CompletableFuture.java:2920)
-at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1583)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.zigwheels.testRunner.TestRunner@6a2f6f80]" started-at="2025-08-26T12:26:19 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-26T12:26:19 IST" duration-ms="111" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Validate popular models"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Validate used cars in Chennai"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.zigwheels.testRunner.TestRunner@6a2f6f80]" started-at="2025-08-26T12:26:19 IST" name="tearDownClass" finished-at="2025-08-26T12:26:20 IST" duration-ms="1384" status="FAIL">
-          <exception class="java.lang.RuntimeException">
-            <message>
-              <![CDATA[javax.net.ssl.SSLHandshakeException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.RuntimeException: javax.net.ssl.SSLHandshakeException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
-at io.cucumber.core.plugin.MessageFormatter.writeMessage(MessageFormatter.java:32)
-at io.cucumber.core.eventbus.AbstractEventPublisher.send(AbstractEventPublisher.java:51)
-at io.cucumber.core.eventbus.AbstractEventBus.send(AbstractEventBus.java:12)
-at io.cucumber.core.runtime.SynchronizedEventBus.send(SynchronizedEventBus.java:47)
-at io.cucumber.core.runtime.CucumberExecutionContext.emitTestRunFinished(CucumberExecutionContext.java:125)
-at io.cucumber.core.runtime.CucumberExecutionContext.finishTestRun(CucumberExecutionContext.java:105)
-at io.cucumber.testng.TestNGCucumberRunner.finish(TestNGCucumberRunner.java:145)
-at io.cucumber.testng.AbstractTestNGCucumberTests.tearDownClass(AbstractTestNGCucumberTests.java:57)
+              <![CDATA[java.lang.AssertionError: expected [Used Cars in Chennai - 1624 Second Hand Cars for Sale in Chennai] but found [Used Cars in Chennai - 1632 Second Hand Cars for Sale in Chennai]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at com.zigwheels.tests.SearchHondaBikes.verifyNavigationtoUsedCarsinChennai(SearchHondaBikes.java:78)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.internal.invokers.TestMethodWorker.invokeAfterClassConfigurations(TestMethodWorker.java:238)
-at org.testng.internal.invokers.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:223)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:137)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
 at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 at org.testng.TestRunner.privateRun(TestRunner.java:741)
 at org.testng.TestRunner.run(TestRunner.java:616)
@@ -233,73 +79,37 @@ at org.testng.TestNG.run(TestNG.java:1079)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: javax.net.ssl.SSLHandshakeException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at java.base/sun.net.www.protocol.http.HttpURLConnection$10.run(HttpURLConnection.java:2055)
-at java.base/sun.net.www.protocol.http.HttpURLConnection$10.run(HttpURLConnection.java:2050)
-at java.base/java.security.AccessController.doPrivileged(AccessController.java:571)
-at java.base/sun.net.www.protocol.http.HttpURLConnection.getChainedException(HttpURLConnection.java:2049)
-at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1619)
-at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1599)
-at java.base/java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:531)
-at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(HttpsURLConnectionImpl.java:307)
-at io.cucumber.core.plugin.UrlOutputStream.getResponseBody(UrlOutputStream.java:125)
-at io.cucumber.core.plugin.UrlOutputStream.sendRequest(UrlOutputStream.java:87)
-at io.cucumber.core.plugin.UrlOutputStream.close(UrlOutputStream.java:65)
-at java.base/sun.nio.cs.StreamEncoder.implClose(StreamEncoder.java:439)
-at java.base/sun.nio.cs.StreamEncoder.lockedClose(StreamEncoder.java:237)
-at java.base/sun.nio.cs.StreamEncoder.close(StreamEncoder.java:228)
-at java.base/java.io.OutputStreamWriter.close(OutputStreamWriter.java:266)
-at io.cucumber.core.plugin.MessageFormatter.writeMessage(MessageFormatter.java:29)
-... 32 more
-Caused by: javax.net.ssl.SSLHandshakeException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
-at java.base/sun.security.ssl.Alert.createSSLException(Alert.java:130)
-at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:378)
-at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:321)
-at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:316)
-at java.base/sun.security.ssl.CertificateMessage$T13CertificateConsumer.checkServerCerts(CertificateMessage.java:1318)
-at java.base/sun.security.ssl.CertificateMessage$T13CertificateConsumer.onConsumeCertificate(CertificateMessage.java:1195)
-at java.base/sun.security.ssl.CertificateMessage$T13CertificateConsumer.consume(CertificateMessage.java:1138)
-at java.base/sun.security.ssl.SSLHandshake.consume(SSLHandshake.java:393)
-at java.base/sun.security.ssl.HandshakeContext.dispatch(HandshakeContext.java:476)
-at java.base/sun.security.ssl.HandshakeContext.dispatch(HandshakeContext.java:447)
-at java.base/sun.security.ssl.TransportContext.dispatch(TransportContext.java:201)
-at java.base/sun.security.ssl.SSLTransport.decode(SSLTransport.java:172)
-at java.base/sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1506)
-at java.base/sun.security.ssl.SSLSocketImpl.readHandshakeRecord(SSLSocketImpl.java:1421)
-at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:455)
-at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:426)
-at java.base/sun.net.www.protocol.https.HttpsClient.afterConnect(HttpsClient.java:586)
-at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:187)
-at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1675)
-at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1599)
-at java.base/sun.net.www.protocol.http.HttpURLConnection.getHeaderFields(HttpURLConnection.java:3258)
-at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getHeaderFields(HttpsURLConnectionImpl.java:252)
-at io.cucumber.core.plugin.UrlOutputStream.getResponseBody(UrlOutputStream.java:124)
-... 39 more
-Caused by: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
-at java.base/sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:388)
-at java.base/sun.security.validator.PKIXValidator.engineValidate(PKIXValidator.java:271)
-at java.base/sun.security.validator.Validator.validate(Validator.java:256)
-at java.base/sun.security.ssl.X509TrustManagerImpl.checkTrusted(X509TrustManagerImpl.java:230)
-at java.base/sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(X509TrustManagerImpl.java:132)
-at java.base/sun.security.ssl.CertificateMessage$T13CertificateConsumer.checkServerCerts(CertificateMessage.java:1302)
-... 57 more
-Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
-at java.base/sun.security.provider.certpath.SunCertPathBuilder.build(SunCertPathBuilder.java:146)
-at java.base/sun.security.provider.certpath.SunCertPathBuilder.engineBuild(SunCertPathBuilder.java:127)
-at java.base/java.security.cert.CertPathBuilder.build(CertPathBuilder.java:297)
-at java.base/sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:383)
-... 62 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.RuntimeException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDownClass -->
-      </class> <!-- com.zigwheels.testRunner.TestRunner -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- verifyNavigationtoUsedCarsinChennai -->
+        <test-method signature="validateCars()[pri:12, instance:com.zigwheels.tests.SearchHondaBikes@5e5d171f]" started-at="2025-08-27T12:12:58 IST" name="validateCars" finished-at="2025-08-27T12:13:00 IST" duration-ms="1889" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCars -->
+        <test-method signature="checkBoxes()[pri:13, instance:com.zigwheels.tests.SearchHondaBikes@5e5d171f]" started-at="2025-08-27T12:13:00 IST" name="checkBoxes" finished-at="2025-08-27T12:13:00 IST" depends-on-methods="com.zigwheels.tests.SearchHondaBikes.validateCars" duration-ms="16" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkBoxes -->
+        <test-method signature="testLoginOptions()[pri:21, instance:com.zigwheels.tests.SearchHondaBikes@5e5d171f]" started-at="2025-08-27T12:13:00 IST" name="testLoginOptions" finished-at="2025-08-27T12:13:13 IST" duration-ms="13601" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginOptions -->
+        <test-method signature="navigateToGoogleLoginWindow()[pri:22, instance:com.zigwheels.tests.SearchHondaBikes@5e5d171f]" started-at="2025-08-27T12:13:13 IST" name="navigateToGoogleLoginWindow" finished-at="2025-08-27T12:13:14 IST" duration-ms="828" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToGoogleLoginWindow -->
+        <test-method signature="validateEmail()[pri:23, instance:com.zigwheels.tests.SearchHondaBikes@5e5d171f]" started-at="2025-08-27T12:13:14 IST" name="validateEmail" finished-at="2025-08-27T12:14:06 IST" duration-ms="51888" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateEmail -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zigwheels.tests.SearchHondaBikes@5e5d171f]" started-at="2025-08-27T12:14:06 IST" name="tearDown" finished-at="2025-08-27T12:14:17 IST" duration-ms="11042" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.zigwheels.tests.SearchHondaBikes -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

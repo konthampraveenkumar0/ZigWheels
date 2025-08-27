@@ -70,16 +70,26 @@ public class SearchHondaBikes extends BaseClass
 	
 	
 	@Test(priority=11)
+	public void verifyNavigationtoUsedCarsinChennai() throws IOException, InterruptedException
+	{
+		
+		homePage.SearchFor(SearchData[1]);
+		logger.info("navigated to UsedCars in Chennai page");
+		Assert.assertEquals(driver.getTitle(),"Used Cars in Chennai - 1624 Second Hand Cars for Sale in Chennai");
+	}
+	
+	
+	@Test(priority=12)
 	public void validateCars() throws IOException, InterruptedException
 	{
-		homePage.SearchFor(SearchData[1]);
+		
 		usedCars=new UsedCars(driver);
 		logger.info("Validating used car list");
 		Assert.assertTrue(usedCars.verifyFullList());
 		
 	}
 	
-	@Test(priority=12,dependsOnMethods= {"validateCars"})
+	@Test(priority=13,dependsOnMethods= {"validateCars"})
 	public void checkBoxes() throws InterruptedException
 	{
 		System.out.println();
@@ -92,25 +102,42 @@ public class SearchHondaBikes extends BaseClass
 	
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //	google login 
-	
+
 	
 	@Test(priority=21)
-	public void navigateToNewWindow() throws InterruptedException
+	public void testLoginOptions() throws InterruptedException
 	{
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-////		homePage.goToHomePage();
-		Thread.sleep(2000);
-		driver.navigate().back();
-		Thread.sleep(2000);
-		driver.navigate().back();
-		Thread.sleep(2000);
-//		googleLoginPage.clickLoginButton();
-//		googleLoginPage.clickGoogleLogin();
-//		Assert.assertTrue(googleLoginPage.switchToGoogleWindow(), "Window not changed");
 		
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+		Thread.sleep(2000);
+		driver.navigate().back();
+		Thread.sleep(2000);
+		driver.navigate().back();
+		Thread.sleep(2000);
+		logger.info("Navigated to Home Page");
 		googleLoginPage=new GoogleLoginPage(driver);
 		logger.info("Clicking login button");
 		googleLoginPage.clickLoginButton();
+		
+		String actualFaceBookText = googleLoginPage.getFaceBookText();
+	    String actualAppleText = googleLoginPage.getAppleText();
+	    String actualGoogleText = googleLoginPage.getGoogleText();
+
+	    System.out.println("Facebook Text: " + actualFaceBookText);
+	    System.out.println("Apple Text: " + actualAppleText);
+	    System.out.println("Google Text: " + actualGoogleText);
+
+	    boolean allMatch = actualFaceBookText.equals("Facebook") &&
+	                       actualAppleText.equals("Apple") &&
+	                       actualGoogleText.equals("Google");
+
+	    Assert.assertTrue(allMatch, "One or more login button texts do not match expected values.");
+	
+	}
+	
+	@Test(priority=22)
+	public void navigateToGoogleLoginWindow() 
+	{
 		logger.info("Clicking Google login option");
 		googleLoginPage.clickGoogleLogin();
 		logger.info("Switching to Google login window");
@@ -118,7 +145,7 @@ public class SearchHondaBikes extends BaseClass
 		
 	}
 	
-	@Test(priority=22)
+	@Test(priority=23)
 	public void validateEmail()
 	{
 		logger.info("Entering email");

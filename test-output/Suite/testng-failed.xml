@@ -10,16 +10,9 @@
     <classes>
       <class name="com.zigwheels.tests.SearchHondaBikes">
         <methods>
-          <include name="validateEmail"/>
-          <include name="checkBoxes"/>
-          <include name="testSearchUpcomingHondaBikes"/>
-          <include name="testBikeCardDetails"/>
-          <include name="testPriceBelowThreshold"/>
-          <include name="navigateToNewWindow"/>
           <include name="setup"/>
-          <include name="validateCars"/>
+          <include name="verifyNavigationtoUsedCarsinChennai"/>
           <include name="tearDown"/>
-          <include name="verifyNavigationtoUpcomingHondaBikes"/>
         </methods>
       </class> <!-- com.zigwheels.tests.SearchHondaBikes -->
     </classes>

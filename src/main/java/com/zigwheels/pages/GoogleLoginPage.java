@@ -54,6 +54,15 @@ public class GoogleLoginPage
     @FindBy(xpath = "//*[@id='c0']/div[2]")
     WebElement passwordErrorMessage;
     
+    /////login ways
+    @FindBy(xpath="//*[@class='lgn-sc fb c-p txt-l pl-30 pr-30']/span[2]")
+    WebElement facebook_button;
+    
+    @FindBy(xpath="//*[@id='appleSignIn']")
+    WebElement apple_button;
+    
+    
+    
     
     public void clickLoginButton() {
     	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3000));
@@ -108,6 +117,21 @@ public class GoogleLoginPage
     
     public String getPasswordErrorMessage() {
         return passwordErrorMessage.getText();
+    }
+    
+    public String getFaceBookText()
+    {
+    	return facebook_button.getText();
+    }
+    
+    public String getAppleText()
+    {
+    	return apple_button.getText();
+    }
+    
+    public String getGoogleText()
+    {
+    	return googleLoginButton.getText();
     }
     
 }
