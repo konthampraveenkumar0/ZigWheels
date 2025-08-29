@@ -27,8 +27,8 @@ public class UsedCars {
     @FindBy(xpath = "//*[@class='zw-sr-searchWrap zw-sr-searchGrid']/div/div/div[3]/div[2]/a")
     private List<WebElement> AllCarModels;
 
-    // @FindBy(xpath = "//*[@class='zw-sr-searchWrap zw-sr-searchGrid']/div/div/div[3]/div[2]/a")
-    // private List<WebElement> checkedModels;
+     @FindBy(xpath = "//*[@class='zw-sr-searchWrap zw-sr-searchGrid']/div/div/div[3]/div[2]/a")
+     private List<WebElement> checkedModels;
 
     @FindBy(xpath = "//*[@id='data-set-body']")
     WebElement noDataFound;
@@ -74,20 +74,20 @@ public class UsedCars {
         System.out.println("checked models");
         System.out.println();
 
-        List<WebElement> checkedModels = driver.findElements(
-            By.xpath("//*[@class='zw-sr-searchWrap zw-sr-searchGrid']/div/div/div[3]/div[2]/a")
-        );
-
-        if (checkedModels.size() > 0) 
+//        List<WebElement> checkedModels = driver.findElements(
+//            By.xpath("//*[@class='zw-sr-searchWrap zw-sr-searchGrid']/div/div/div[3]/div[2]/a")
+//        );
+        List<WebElement> checkedModelsRefresh = checkedModels;
+        if (checkedModelsRefresh.size() > 0) 
         {
         	
-        	for(int i=1;i<=5;i++)
-        	{
-        		System.out.println(driver.findElement(By.xpath("(//*[@class='zw-sr-searchWrap zw-sr-searchGrid']/div/div/div[3]/div[2]/a)["+i+"]")).getText());
-        	}
-//            for (int i = 0; i < checkedModels.size(); i++) {
-//                System.out.println(checkedModels.get(i).getText());
-//            }
+//        	for(int i=1;i<=5;i++)
+//        	{
+//        		System.out.println(driver.findElement(By.xpath("(//*[@class='zw-sr-searchWrap zw-sr-searchGrid']/div/div/div[3]/div[2]/a)["+i+"]")).getText());
+//        	}
+            for (int i = 0; i < checkedModelsRefresh.size(); i++) {
+                System.out.println(checkedModelsRefresh.get(i).getText());
+            }
             return true;
         }
         return false;

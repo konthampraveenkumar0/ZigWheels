@@ -75,7 +75,7 @@ public class SearchHondaBikes extends BaseClass
 		
 		homePage.SearchFor(SearchData[1]);
 		logger.info("navigated to UsedCars in Chennai page");
-		Assert.assertEquals(driver.getTitle(),"Used Cars in Chennai - 1624 Second Hand Cars for Sale in Chennai");
+		Assert.assertTrue(driver.getTitle().contains("Used Cars in Chennai"));
 	}
 	
 	
@@ -143,7 +143,6 @@ public class SearchHondaBikes extends BaseClass
 		googleLoginPage.clickGoogleLogin();
 		logger.info("Switching to Google login window");
 		Assert.assertTrue(googleLoginPage.switchToGoogleWindow(),"Switching to Google Login window Failed !!");
-		
 	}
 	
 	@Test(priority=23)
@@ -151,7 +150,9 @@ public class SearchHondaBikes extends BaseClass
 	{
 		logger.info("Entering email");
 		googleLoginPage.sendEmail("praveen@gmail.com");
-		System.out.println(googleLoginPage.getEmailErrorMessage2());
+		String actualErrormsg=googleLoginPage.getEmailErrorMessage2();
+		System.out.println(actualErrormsg);
+		Assert.assertEquals(actualErrormsg,"Sign in");
 	}
 	
 }

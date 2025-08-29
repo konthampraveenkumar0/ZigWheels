@@ -6,7 +6,7 @@
       <class name="com.zigwheels.testRunner.TestRunner">
         <methods>
           <include name="setUpClass"/>
-          <include name="runScenario" invocation-numbers="6"/>
+          <include name="runScenario" invocation-numbers="7"/>
           <include name="tearDownClass"/>
         </methods>
       </class> <!-- com.zigwheels.testRunner.TestRunner -->

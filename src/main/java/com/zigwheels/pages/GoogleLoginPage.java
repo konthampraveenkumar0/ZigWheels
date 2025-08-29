@@ -65,12 +65,10 @@ public class GoogleLoginPage
     
     
     public void clickLoginButton() {
-    	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3000));
         loginButton.click();
     }
 
     public void clickGoogleLogin() {
-    	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3000));
         googleLoginButton.click();
     }
 
@@ -95,9 +93,6 @@ public class GoogleLoginPage
     	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
     	WebElement emailField = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("identifierId")));
     	emailField.sendKeys(email);
-
-//    	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-//    	emailIdField.sendKeys(email);
     	emailNextButton.click();
     }
     
@@ -108,7 +103,8 @@ public class GoogleLoginPage
     }
     
 
-    public String getEmailErrorMessage() {
+    public String getEmailErrorMessage() 
+    {
         return emailErrorMessage.getText();
     }
     public String getEmailErrorMessage2() {
